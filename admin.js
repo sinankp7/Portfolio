@@ -19,7 +19,7 @@
 /* ==========================================================================
    1. CONSTANTS & DEFAULTS
    ========================================================================== */
-const ADMIN_USER = 'KSINANP';
+const ADMIN_USER = 'sinankp3518@gmail.com';
 const ADMIN_PASS = '3518';
 const STORAGE_KEY_MASTER = 'sinankp_master_config_v2';
 
@@ -749,14 +749,14 @@ function injectAdminUI() {
       <p>Sign in to edit proficiencies, symbols, skill tabs, images, and rebuild designs in real-time.</p>
       <form id="admin-login-form" autocomplete="off">
         <div class="admin-form-group">
-          <label class="admin-form-label" for="admin-user-input">Username</label>
-          <input class="admin-form-input" type="text" id="admin-user-input" autocomplete="off" placeholder="Enter username" spellcheck="false" value="KSINANP">
+          <label class="admin-form-label" for="admin-user-input">Admin Email</label>
+          <input class="admin-form-input" type="email" id="admin-user-input" autocomplete="off" placeholder="name@example.com" spellcheck="false" value="">
         </div>
         <div class="admin-form-group">
           <label class="admin-form-label" for="admin-pass-input">Password</label>
-          <input class="admin-form-input" type="password" id="admin-pass-input" autocomplete="off" placeholder="Enter password" value="3518">
+          <input class="admin-form-input" type="password" id="admin-pass-input" autocomplete="off" placeholder="Enter password" value="">
         </div>
-        <p class="admin-login-error" id="admin-login-error">Incorrect credentials. Please try again.</p>
+        <p class="admin-login-error" id="admin-login-error">Unauthorized email or password.</p>
         <button type="submit" class="admin-login-btn">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
           Sign In & Customize
@@ -811,7 +811,7 @@ function injectAdminUI() {
 
     <div class="tb-user-chip">
       <div class="tb-avatar">SK</div>
-      <span class="tb-username">KSINANP</span>
+      <span class="tb-username">sinankp3518@gmail.com</span>
     </div>
 
     <!-- Logout -->
@@ -823,7 +823,7 @@ function injectAdminUI() {
 
   /* --- 3. Comprehensive Side Drawer Panel --- */
   const sidePanelHTML = `
-  <div id="admin-panel" class="open" role="complementary" aria-label="Portfolio Studio Panel">
+  <div id="admin-panel" role="complementary" aria-label="Portfolio Studio Panel">
     <div class="ap-header">
       <span class="ap-title">Portfolio Studio & CMS</span>
       <button class="ap-close" id="ap-close-btn" title="Close Panel">
@@ -1909,17 +1909,17 @@ function closeLoginModal() {
 }
 
 function handleLogin() {
-  const user = document.getElementById('admin-user-input')?.value.trim();
-  const pass = document.getElementById('admin-pass-input')?.value.trim();
+  const user = (document.getElementById('admin-user-input')?.value || '').trim().toLowerCase();
+  const pass = (document.getElementById('admin-pass-input')?.value || '').trim();
   const error = document.getElementById('admin-login-error');
 
-  if (user === ADMIN_USER && pass === ADMIN_PASS) {
+  if (user === ADMIN_USER.toLowerCase() && pass === ADMIN_PASS) {
     sessionStorage.setItem('admin_auth', 'true');
     isAdmin = true;
     closeLoginModal();
     showAdminToolbar();
     openSidePanel();
-    showAdminToast('Welcome back, Admin! Customizer active.', 'success');
+    showAdminToast('Welcome back, Sinan! Customizer active.', 'success');
   } else {
     error?.classList.add('show');
   }
