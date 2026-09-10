@@ -54,8 +54,7 @@
 .admin-modal {
   background: #fff;
   border: 1px solid rgba(201, 168, 76, 0.2);
-  bordxb nav-down: margin:;
-  -radius: 20px;
+  border-radius: 20px;
   padding: 40px 44px;
   width: min(440px, 90vw);
   box-shadow: 0 24px 80px rgba(160, 120, 48, 0.2);
