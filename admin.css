@@ -1770,5 +1770,24 @@ body.edit-mode .skill-card-edit-overlay {
 @media (max-width: 768px) {
   #admin-panel {
     width: 100%;
+    top: 50px;
+  }
+  .admin-modal {
+    padding: 30px 22px;
+    width: min(360px, 94vw);
+  }
+  #admin-toolbar {
+    padding: 0 10px;
+    gap: 4px;
+    overflow-x: auto;
+  }
+  .tb-btn span {
+    display: none;
+  }
+  .tb-btn {
+    padding: 6px 8px;
+  }
+  .tb-username {
+    display: none;
   }
 }
