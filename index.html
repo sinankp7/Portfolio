@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammed Sinan KP | Creative Designer Portfolio</title>
+  <meta name="description" content="Portfolio of Muhammed Sinan KP - A creative designer passionate about creating modern, attractive, and meaningful digital experiences. Specializing in UI/UX, Graphic Design, Web Design & AI Tools.">
+  <meta name="keywords" content="Muhammed Sinan KP, Sinan KP, Designer, UI/UX Designer, Graphic Designer, Web Designer, Portfolio">
+  <meta name="author" content="Muhammed Sinan KP">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Muhammed Sinan KP | Creative Designer">
+  <meta property="og:description" content="Creative designer passionate about crafting futuristic and meaningful digital experiences.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Cormorant Garamond, DM Sans, Syne, Outfit, Inter, Space Grotesk, Playfair Display, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Admin System -->
+  <link rel="stylesheet" href="admin.css">
+  <!-- Custom Admin Injected Styles -->
+  <style id="custom-admin-styles"></style>
+</head>
+<body>
+
+  <!-- Ambient Glow Elements & Canvas -->
+  <canvas id="ambient-canvas"></canvas>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <nav class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Sinan KP Home">
+        <span class="logo-text">Sinan<span class="logo-dot">.</span>KP</span>
+        <span class="logo-tag">DESIGN</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Action Button -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-outline btn-sm">
+          <span>Let's Talk</span>
+          <i data-lucide="arrow-up-right"></i>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <i data-lucide="menu" class="icon-open"></i>
+          <i data-lucide="x" class="icon-close"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-nav" id="mobile-nav">
+      <div class="mobile-nav-content">
+        <ul class="mobile-links">
+          <li><a href="#hero" class="mobile-link active">Home</a></li>
+          <li><a href="#about" class="mobile-link">About</a></li>
+          <li><a href="#skills" class="mobile-link">Skills</a></li>
+          <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+        <div class="mobile-footer">
+          <a href="#contact" class="btn btn-primary btn-full">
+            <span>Get in Touch</span>
+            <i data-lucide="mail"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+        <!-- Hero Content (Left) -->
+        <div class="hero-content" data-reveal="left">
+          <!-- Availability Badge -->
+          <div class="status-badge">
+            <span class="pulse-indicator">
+              <span class="pulse-ring"></span>
+              <span class="pulse-dot"></span>
+            </span>
+            <span class="badge-text">Available for Projects & Collaboration</span>
+          </div>
+
+          <!-- Main Heading -->
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Sinan KP</span>
+          </h1>
+
+          <!-- Subtitle / Role -->
+          <div class="hero-subtitle-wrapper">
+            <span class="subtitle-label">Role:</span>
+            <span class="hero-subtitle glow-text">Designer</span>
+          </div>
+
+          <!-- Introduction -->
+          <p class="hero-intro">
+            I'm <strong>Muhammed Sinan KP</strong>, a creative designer passionate about creating modern, attractive, and meaningful digital experiences.
+          </p>
+
+          <!-- Education Badge Card -->
+          <div class="hero-education-card">
+            <div class="edu-icon-box">
+              <i data-lucide="graduation-cap"></i>
+            </div>
+            <div class="edu-info">
+              <span class="edu-label">Education Status</span>
+              <span class="edu-value">Degree – 1st Year Student</span>
+            </div>
+          </div>
+
+          <!-- Call to Action Buttons -->
+          <div class="hero-actions">
+            <a href="#skills" class="btn btn-primary">
+              <span>Explore Skills</span>
+              <i data-lucide="sparkles"></i>
+            </a>
+            <a href="#contact" class="btn btn-glass">
+              <span>Contact Me</span>
+              <i data-lucide="send"></i>
+            </a>
+          </div>
+
+          <!-- Hero Metrics / Mini Badges -->
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <span class="highlight-num">100%</span>
+              <span class="highlight-desc">Creative Focus</span>
+            </div>
+            <div class="highlight-divider"></div>
+            <div class="highlight-item">
+              <span class="highlight-num">6+</span>
+              <span class="highlight-desc">Core Disciplines</span>
+            </div>
+            <div class="highlight-divider"></div>
+            <div class="highlight-item">
+              <span class="highlight-num">Modern</span>
+              <span class="highlight-desc">Design Standards</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Profile Image Area (Right) -->
+        <div class="hero-visual" data-reveal="right">
+          <div class="profile-card-wrapper">
+            <!-- Glowing Orbit Rings -->
+            <div class="orbit-ring orbit-1"></div>
+            <div class="orbit-ring orbit-2"></div>
+
+            <!-- Profile Card Container -->
+            <div class="profile-card glass-card tilt-card">
+              <div class="profile-image-container">
+                <img src="assets/images/avatar.png" alt="Muhammed Sinan KP - Designer" class="profile-image" id="profile-img" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=80'">
+                <div class="image-overlay-glow"></div>
+              </div>
+
+              <!-- Profile Card Header / Bio Footnote -->
+              <div class="profile-card-footer">
+                <div class="profile-meta">
+                  <h3 class="profile-name">Muhammed Sinan KP</h3>
+                  <p class="profile-designation">Creative Visual & UI/UX Designer</p>
+                </div>
+                <div class="profile-badge">
+                  <i data-lucide="shield-check"></i>
+                  <span>Verified</span>
+                </div>
+              </div>
+
+              <!-- Floating Micro Glass Badges -->
+              <div class="floating-badge badge-top-left glass-card">
+                <i data-lucide="palette" class="badge-icon icon-cyan"></i>
+                <div class="badge-text-group">
+                  <span class="badge-micro-title">UI/UX & Graphics</span>
+                  <span class="badge-micro-sub">Pixel Perfect</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom-right glass-card">
+                <i data-lucide="sparkles" class="badge-icon icon-purple"></i>
+                <div class="badge-text-group">
+                  <span class="badge-micro-title">Futuristic Style</span>
+                  <span class="badge-micro-sub">Modern Aesthetics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center" data-reveal="up">
+          <div class="section-tag">
+            <i data-lucide="user"></i>
+            <span>GET TO KNOW ME</span>
+          </div>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">Dedicated to crafting aesthetic, purposeful, and intuitive visual solutions.</p>
+        </div>
+
+        <!-- About Grid -->
+        <div class="about-grid">
+          <!-- About Info Card (Left) -->
+          <div class="glass-card about-profile-card tilt-card" data-reveal="left">
+            <div class="about-card-header">
+              <div class="avatar-mini">
+                <img src="assets/images/avatar.png" alt="Sinan KP" class="avatar-mini-img" id="avatar-mini-img" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=80'">
+              </div>
+              <div>
+                <h3 class="about-name">Muhammed Sinan KP</h3>
+                <span class="about-role-tag">Creative Designer</span>
+              </div>
+            </div>
+
+            <div class="about-data-list">
+              <div class="data-item">
+                <span class="data-label">
+                  <i data-lucide="user-check"></i>
+                  <span>Name:</span>
+                </span>
+                <span class="data-value highlight">Muhammed Sinan KP</span>
+              </div>
+
+              <div class="data-item">
+                <span class="data-label">
+                  <i data-lucide="graduation-cap"></i>
+                  <span>Education:</span>
+                </span>
+                <span class="data-value">Degree – 1st Year Student</span>
+              </div>
+
+              <div class="data-item">
+                <span class="data-label">
+                  <i data-lucide="briefcase"></i>
+                  <span>Role:</span>
+                </span>
+                <span class="data-value highlight-cyan">Designer</span>
+              </div>
+
+              <div class="data-item">
+                <span class="data-label">
+                  <i data-lucide="map-pin"></i>
+                  <span>Location:</span>
+                </span>
+                <span class="data-value">Kerala, India</span>
+              </div>
+
+              <div class="data-item">
+                <span class="data-label">
+                  <i data-lucide="mail"></i>
+                  <span>Email:</span>
+                </span>
+                <a href="mailto:sinankp3518@gmail.com" class="data-value link-value">sinankp3518@gmail.com</a>
+              </div>
+
+              <div class="data-item">
+                <span class="data-label">
+                  <i data-lucide="phone"></i>
+                  <span>Mobile:</span>
+                </span>
+                <a href="tel:+919526849035" class="data-value link-value">+91 9526849035</a>
+              </div>
+
+              <div class="data-item">
+                <span class="data-label">
+                  <svg class="insta-svg-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                  <span>Instagram:</span>
+                </span>
+                <a href="https://instagram.com/cinnaaann._" target="_blank" rel="noopener noreferrer" class="data-value link-value insta-badge-glow">@cinnaaann._</a>
+              </div>
+            </div>
+
+            <div class="about-card-actions">
+              <a href="#contact" class="btn btn-outline btn-full">
+                <span>Connect with Me</span>
+                <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- About Narrative & Pillars (Right) -->
+          <div class="about-narrative" data-reveal="right">
+            <div class="glass-card narrative-card">
+              <h3 class="narrative-heading">
+                Crafting Visual Stories with <span class="gradient-text">Passion & Precision</span>
+              </h3>
+              
+              <p class="narrative-text">
+                As a passionate designer and a 1st Year Degree student, I blend creativity, modern design principles, and technological tools to create digital experiences that stand out. I believe that good design is not just how something looks, but how it connects with people and solves problems.
+              </p>
+
+              <p class="narrative-text">
+                My creative journey is fueled by a relentless curiosity to learn new skills, experiment with futuristic visual aesthetics, and master industry-standard software—ranging from Figma and Photoshop to cutting-edge AI design workflows and motion graphics.
+              </p>
+
+              <!-- Design Philosophy Pillars -->
+              <div class="pillars-grid">
+                <div class="pillar-box">
+                  <div class="pillar-icon icon-cyan">
+                    <i data-lucide="eye"></i>
+                  </div>
+                  <h4 class="pillar-title">Visual Elegance</h4>
+                  <p class="pillar-desc">Clean layouts, modern palettes, and typography that elevates every interface.</p>
+                </div>
+
+                <div class="pillar-box">
+                  <div class="pillar-icon icon-purple">
+                    <i data-lucide="layers"></i>
+                  </div>
+                  <h4 class="pillar-title">User Centric</h4>
+                  <p class="pillar-desc">Intuitive navigation and seamless user journeys designed with empathy.</p>
+                </div>
+
+                <div class="pillar-box">
+                  <div class="pillar-icon icon-emerald">
+                    <i data-lucide="zap"></i>
+                  </div>
+                  <h4 class="pillar-title">Continuous Growth</h4>
+                  <p class="pillar-desc">Constantly exploring next-generation AI tools and evolving design methodologies.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center" data-reveal="up">
+          <div class="section-tag">
+            <i data-lucide="cpu"></i>
+            <span>MY EXPERTISE</span>
+          </div>
+          <h2 class="section-title">Skills & <span class="gradient-text">Proficiencies</span></h2>
+          <p class="section-subtitle">A modern toolkit designed to bring bold ideas to life with high visual impact.</p>
+        </div>
+
+        <!-- Skills Category Tabs Filter -->
+        <div class="skills-filter-wrapper" id="skills-filter-wrapper">
+          <div class="skill-category-tabs" id="skill-category-tabs">
+            <button class="skill-tab-btn active" data-category="all">All Skills</button>
+            <button class="skill-tab-btn" data-category="design">Design & UI</button>
+            <button class="skill-tab-btn" data-category="tools">Software & Media</button>
+            <button class="skill-tab-btn" data-category="ai">AI & Future</button>
+          </div>
+        </div>
+
+        <!-- Skills Grid Container -->
+        <div class="skills-grid" id="skills-grid-container">
+          <!-- 1. Graphic Design -->
+          <div class="glass-card skill-card tilt-card" data-reveal="up" data-delay="100">
+            <div class="skill-glow glow-cyan"></div>
+            <div class="skill-header">
+              <div class="skill-icon-wrap icon-cyan">
+                <i data-lucide="layout"></i>
+              </div>
+              <span class="skill-level-badge">Advanced</span>
+            </div>
+            <h3 class="skill-title">Graphic Design</h3>
+            <p class="skill-desc">Visual identity, branding, promotional banners, vector illustrations, and high-impact social media creatives.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Branding</span>
+              <span class="skill-tag">Typography</span>
+              <span class="skill-tag">Layouts</span>
+            </div>
+            <div class="skill-progress-wrap">
+              <div class="progress-info">
+                <span>Proficiency</span>
+                <span class="progress-percent">95%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="--target-width: 95%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. UI/UX Design -->
+          <div class="glass-card skill-card tilt-card" data-reveal="up" data-delay="200">
+            <div class="skill-glow glow-purple"></div>
+            <div class="skill-header">
+              <div class="skill-icon-wrap icon-purple">
+                <i data-lucide="smartphone"></i>
+              </div>
+              <span class="skill-level-badge">Expert</span>
+            </div>
+            <h3 class="skill-title">UI/UX Design</h3>
+            <p class="skill-desc">Wireframing, high-fidelity prototypes, interactive user journeys, and modern design systems in Figma.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Figma</span>
+              <span class="skill-tag">Wireframing</span>
+              <span class="skill-tag">Design Systems</span>
+            </div>
+            <div class="skill-progress-wrap">
+              <div class="progress-info">
+                <span>Proficiency</span>
+                <span class="progress-percent">92%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="--target-width: 92%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Web Design -->
+          <div class="glass-card skill-card tilt-card" data-reveal="up" data-delay="300">
+            <div class="skill-glow glow-cyan"></div>
+            <div class="skill-header">
+              <div class="skill-icon-wrap icon-cyan">
+                <i data-lucide="globe"></i>
+              </div>
+              <span class="skill-level-badge">Proficient</span>
+            </div>
+            <h3 class="skill-title">Web Design</h3>
+            <p class="skill-desc">Responsive layouts, futuristic dark interfaces, micro-interactions, CSS animations, and clean semantic structures.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Responsive UI</span>
+              <span class="skill-tag">HTML/CSS</span>
+              <span class="skill-tag">Modern Web</span>
+            </div>
+            <div class="skill-progress-wrap">
+              <div class="progress-info">
+                <span>Proficiency</span>
+                <span class="progress-percent">88%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="--target-width: 88%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Photoshop -->
+          <div class="glass-card skill-card tilt-card" data-reveal="up" data-delay="400">
+            <div class="skill-glow glow-emerald"></div>
+            <div class="skill-header">
+              <div class="skill-icon-wrap icon-emerald">
+                <i data-lucide="image"></i>
+              </div>
+              <span class="skill-level-badge">Mastery</span>
+            </div>
+            <h3 class="skill-title">Photoshop</h3>
+            <p class="skill-desc">Advanced photo manipulation, digital compositing, mockups, color grading, and creative poster designing.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Photo Manipulation</span>
+              <span class="skill-tag">Retouching</span>
+              <span class="skill-tag">Compositing</span>
+            </div>
+            <div class="skill-progress-wrap">
+              <div class="progress-info">
+                <span>Proficiency</span>
+                <span class="progress-percent">96%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="--target-width: 96%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Video Editing -->
+          <div class="glass-card skill-card tilt-card" data-reveal="up" data-delay="500">
+            <div class="skill-glow glow-purple"></div>
+            <div class="skill-header">
+              <div class="skill-icon-wrap icon-purple">
+                <i data-lucide="video"></i>
+              </div>
+              <span class="skill-level-badge">Creative</span>
+            </div>
+            <h3 class="skill-title">Video Editing</h3>
+            <p class="skill-desc">Motion graphics, dynamic video cuts, sound sync, visual effects, and engaging short-form/long-form edits.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Premiere Pro</span>
+              <span class="skill-tag">After Effects</span>
+              <span class="skill-tag">Motion Cuts</span>
+            </div>
+            <div class="skill-progress-wrap">
+              <div class="progress-info">
+                <span>Proficiency</span>
+                <span class="progress-percent">85%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="--target-width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. AI Design Tools -->
+          <div class="glass-card skill-card tilt-card" data-reveal="up" data-delay="600">
+            <div class="skill-glow glow-cyan"></div>
+            <div class="skill-header">
+              <div class="skill-icon-wrap icon-cyan">
+                <i data-lucide="sparkle"></i>
+              </div>
+              <span class="skill-level-badge">Innovator</span>
+            </div>
+            <h3 class="skill-title">AI Design Tools</h3>
+            <p class="skill-desc">Generative AI art, prompt engineering, AI-assisted rapid concepting, upscaling, and workflow automation.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Generative AI</span>
+              <span class="skill-tag">Prompting</span>
+              <span class="skill-tag">AI Workflows</span>
+            </div>
+            <div class="skill-progress-wrap">
+              <div class="progress-info">
+                <span>Proficiency</span>
+                <span class="progress-percent">90%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="--target-width: 90%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center" data-reveal="up">
+          <div class="section-tag">
+            <i data-lucide="message-square"></i>
+            <span>LET'S CONNECT</span>
+          </div>
+          <h2 class="section-title">Get in <span class="gradient-text">Touch</span></h2>
+          <p class="section-subtitle">Have a project in mind, a freelance inquiry, or just want to say hi? Send me a message!</p>
+        </div>
+
+        <!-- Contact Layout Grid -->
+        <div class="contact-grid">
+          <!-- Contact Details / Info Cards (Left) -->
+          <div class="contact-info-col" data-reveal="left">
+            <div class="glass-card contact-info-card">
+              <h3 class="info-card-title">Let's build something extraordinary together.</h3>
+              <p class="info-card-desc">
+                I am actively seeking design opportunities, creative collaborations, and freelance projects to apply my skills and build impactful visual experiences.
+              </p>
+
+              <!-- Direct Channels -->
+              <div class="contact-channels">
+                <div class="channel-item">
+                  <div class="channel-icon icon-cyan">
+                    <i data-lucide="mail"></i>
+                  </div>
+                  <div class="channel-text">
+                    <span class="channel-label">Email Me</span>
+                    <a href="mailto:sinankp3518@gmail.com" class="channel-value">sinankp3518@gmail.com</a>
+                  </div>
+                </div>
+
+                <div class="channel-item">
+                  <div class="channel-icon icon-emerald">
+                    <i data-lucide="phone-call"></i>
+                  </div>
+                  <div class="channel-text">
+                    <span class="channel-label">Mobile / WhatsApp</span>
+                    <a href="tel:+919526849035" class="channel-value">+91 9526849035</a>
+                  </div>
+                </div>
+
+                <div class="channel-item">
+                  <div class="channel-icon icon-insta">
+                    <svg class="insta-svg-icon" viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                  </div>
+                  <div class="channel-text">
+                    <span class="channel-label">Instagram Profile</span>
+                    <a href="https://instagram.com/cinnaaann._" target="_blank" rel="noopener noreferrer" class="channel-value insta-badge-glow">@cinnaaann._</a>
+                  </div>
+                </div>
+
+                <div class="channel-item">
+                  <div class="channel-icon icon-purple">
+                    <i data-lucide="map-pin"></i>
+                  </div>
+                  <div class="channel-text">
+                    <span class="channel-label">Location</span>
+                    <span class="channel-value">Kerala, India (Remote Available)</span>
+                  </div>
+                </div>
+
+                <div class="channel-item">
+                  <div class="channel-icon icon-emerald">
+                    <i data-lucide="clock"></i>
+                  </div>
+                  <div class="channel-text">
+                    <span class="channel-label">Response Time</span>
+                    <span class="channel-value">Within 24 Hours</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Media Links -->
+              <div class="social-links-block">
+                <h4 class="social-heading">Follow & Connect:</h4>
+                <div class="social-icons">
+                  <a href="https://instagram.com/cinnaaann._" target="_blank" rel="noopener noreferrer" class="social-btn social-btn-insta" aria-label="Instagram (@cinnaaann._)" title="Instagram @cinnaaann._">
+                    <svg class="insta-svg-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                  </a>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+                    <i data-lucide="github"></i>
+                  </a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+                    <i data-lucide="linkedin"></i>
+                  </a>
+                  <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Dribbble">
+                    <i data-lucide="dribbble"></i>
+                  </a>
+                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Twitter / X">
+                    <i data-lucide="twitter"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form (Right) -->
+          <div class="contact-form-col" data-reveal="right">
+            <div class="glass-card contact-form-card">
+              <form id="contact-form" class="contact-form" action="https://formsubmit.co/sinankp3518@gmail.com" method="POST" novalidate>
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Your Name</label>
+                  <div class="input-wrapper">
+                    <i data-lucide="user" class="input-icon"></i>
+                    <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Alex Morgan" required>
+                  </div>
+                  <span class="error-msg" id="name-error">Please enter your name</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Your Email Address</label>
+                  <div class="input-wrapper">
+                    <i data-lucide="at-sign" class="input-icon"></i>
+                    <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. alex@example.com" required>
+                  </div>
+                  <span class="error-msg" id="email-error">Please enter a valid email address</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-subject" class="form-label">Subject / Project Type</label>
+                  <div class="input-wrapper">
+                    <i data-lucide="tag" class="input-icon"></i>
+                    <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="e.g. UI/UX Design Project">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message" class="form-label">Your Message</label>
+                  <div class="input-wrapper textarea-wrapper">
+                    <i data-lucide="message-circle" class="input-icon textarea-icon"></i>
+                    <textarea id="contact-message" name="message" class="form-input form-textarea" rows="4" placeholder="Tell me about your project goals, ideas, or questions..." required></textarea>
+                  </div>
+                  <span class="error-msg" id="message-error">Please write a message</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full submit-btn" id="submit-btn">
+                  <span class="btn-default-text">Send Message</span>
+                  <span class="btn-loading-text" style="display:none;">Sending...</span>
+                  <i data-lucide="send" class="btn-send-icon"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="brand-logo">
+          <span class="logo-text">Sinan<span class="logo-dot">.</span>KP</span>
+          <span class="logo-tag">DESIGN</span>
+        </a>
+        <p class="footer-bio">Creative Designer crafting clean, futuristic, and meaningful digital experiences.</p>
+      </div>
+
+      <div class="footer-links-group">
+        <h4 class="footer-col-title">Navigation</h4>
+        <ul class="footer-nav">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-group">
+        <h4 class="footer-col-title">Socials</h4>
+        <ul class="footer-nav">
+          <li>
+            <a href="https://instagram.com/cinnaaann._" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;">
+              <svg class="insta-svg-icon" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span>Instagram (@cinnaaann._)</span>
+            </a>
+          </li>
+          <li><a href="tel:+919526849035">Call / WhatsApp: +91 9526849035</a></li>
+          <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://dribbble.com" target="_blank" rel="noopener">Dribbble</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright Bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="copyright-text">
+          &copy; 2026 Muhammed Sinan KP. All Rights Reserved.
+        </p>
+        <button class="back-to-top" id="back-to-top" aria-label="Back to Top">
+          <span>Back to Top</span>
+          <i data-lucide="chevron-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+  <!-- Admin System -->
+  <script src="admin.js"></script>
+</body>
+</html>
